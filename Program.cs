@@ -1,14 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ConsoleApp4
+namespace ClassRandom
 {
-   internal class Program
+    internal class Program
     {
-          static void Main(string[] argc)
+        static void Main(string[] args)
         {
-            int a = 22;
-            String s ="sda";
-            Console.WriteLine($"werwer {a} {s}");
+            Random random = new Random();
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(random.Next(1, 12));
+            }
             Console.ReadKey();
         }
     }
